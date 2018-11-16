@@ -12,4 +12,5 @@ console.log(canvas);
 c.beginPath();
 c.moveTo(200, 400); // (x, y) line start
 c.lineTo(400, 100); // (x, y) line end
+c.lineTo(800, 400); // line 2
 c.stroke();
