@@ -1,12 +1,15 @@
 var canvas = document.querySelector('canvas')
   ;
-canvas.width = window.innerWidth; // setting full width / height
-canvas.height = window.innerHeight;
+canvas.width = window.innerWidth; // setting full width
+canvas.height = window.innerHeight; // setting full height
 
 var c = canvas.getContext('2d'); // "magic paintbrush"
 
-c.fillStyle = 'rgba(255, 0, 0, 0.5)'; // color and opacity; this formating needs to be above the shape 
+c.fillStyle = 'rgba(255, 0, 0, 0.5)'; // color and opacity; this formating needs to be above the shape
 c.fillRect(100, 100, 100, 100); // Rectangle Shape: coordinates from top lhs of screen: (x, y, width, height)
+
+c.fillStyle = 'rgba(255, 0, 0, 0.2)'; // color and opacity; this formating needs to be above the shape
+c.fillRect(500, 500, 100, 100); // Rectangle Shape: coordinates from top lhs of screen: (x, y, width, height)
 console.log(canvas);
 
 // Line
