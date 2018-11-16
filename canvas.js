@@ -37,7 +37,6 @@ function moverhs() {
 }
 moverhs()
 
-
 // Animated bouncy square - dealing with Y coordinates
 var speed = 4; // how fast i'm going
 var verticalspeed = speed;
@@ -53,6 +52,6 @@ function bounce() {
     verticalspeed = speed
   }
   squareypos = squareypos+verticalspeed
-  window.requestAnimationFrame(bounce)
+  window.requestAnimationFrame(bounce) // "when you have a second again, do this thing"
 }
 bounce()
